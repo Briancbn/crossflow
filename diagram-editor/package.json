@@ -1,8 +1,12 @@
 {
-  "name": "diagram-editor",
+  "name": "crossflow-diagram-editor",
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "exports": {
+    ".": "./frontend/index.tsx",
+    "./lib": "./frontend/lib.tsx"
+  },
   "scripts": {
     "build": "rsbuild build --environment rest-backend",
     "build:wasm": "rsbuild build --environment wasm-backend",
